@@ -13,8 +13,67 @@
 </head>
 <body>
 <div class="container">
+  <div class="score-container">
+    <img src="images/logo.svg" alt="logo" data-logo>
+    <div class="box-score">
+      <p class="text-score">score</p>
+      <p class="score" data-store>12</p>
+    </div>
+  </div>
+  <div class="primary active" data-primary>
+    <svg width="313" height="278" xmlns="http://www.w3.org/2000/svg">
+      <path stroke="#000" stroke-width="15" fill="none" opacity=".2" d="M156.5 262 300 8H13z"/>
+    </svg>
+    <div class="circle circle-paper">
+      <button class="icon-button">
+        <img class="icon" src="./images/icon-paper.svg" alt="paper icon">
+      </button>
+    </div>
+    <div class="circle circle-scissors">
+      <button class="icon-button">
+        <img class="icon scissors" src="./images/icon-scissors.svg" alt="scissors icon">
+      </button>
+    </div>
+    <div class="circle circle-rock">
+      <button class="icon-button">
+        <img class="icon rock" src="./images/icon-rock.svg" alt="rock icon">
+      </button>
+    </div>
+  </div>
+  <div class="extended" data-extend>
+    <svg xmlns="http://www.w3.org/2000/svg" width="329" height="313"><path fill="none" stroke="#000" stroke-width="15" d="M164.5 9.27L9.26 122.06l59.296 182.495h191.888L319.74 122.06 164.5 9.271z" opacity=".2"/></svg>
+    <div class="circle circle-paper">
+      <button class="icon-button">
+        <img class="icon" src="./images/icon-paper.svg" alt="paper icon">
+      </button>
+    </div>
+    <div class="circle circle-scissors">
+      <button class="icon-button">
+        <img class="icon scissors" src="./images/icon-scissors.svg" alt="scissors icon">
+      </button>
+    </div>
+    <div class="circle circle-rock">
+      <button class="icon-button">
+        <img class="icon rock" src="./images/icon-rock.svg" alt="rock icon">
+      </button>
+    </div>
+    <div class="circle circle-lizard">
+      <button class="icon-button">
+        <img class="icon scissors" src="./images/icon-lizard.svg" alt="scissors icon">
+      </button>
+    </div>
+    <div class="circle circle-spock">
+      <button class="icon-button">
+        <img class="icon rock" src="./images/icon-spock.svg" alt="rock icon">
+      </button>
+    </div>
 
-
+  </div>
+  <div class="buttons">
+    <button>reset score</button>
+    <button>extended</button>
+    <button>rules</button>
+  </div>
 </div>
 <script src="./scripts/index.js"></script>
 </body>
