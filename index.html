@@ -12,7 +12,7 @@
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
 </head>
 <body>
-<div class="container">
+<div class="game-container">
   <div class="score-container">
     <img src="images/logo.svg" alt="logo" data-logo>
     <div class="box-score">
@@ -20,7 +20,7 @@
       <p class="score" data-score></p>
     </div>
   </div>
-  <section class="primary  " data-primary>
+  <section class="primary active" data-primary>
     <svg width="313" height="278" xmlns="http://www.w3.org/2000/svg">
       <path stroke="#000" stroke-width="15" fill="none" opacity=".2" d="M156.5 262 300 8H13z"/>
     </svg>
@@ -71,33 +71,20 @@
       </button>
     </div>
   </section>
-  <section class="rules" data-rules>
-    <div class="box-rules">
-      <div class="top">
-        <p>rules</p>
-        <svg data-close xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-          <path fill="#3B4262" fill-rule="evenodd"
-                d="M16.97 0l2.122 2.121-7.425 7.425 7.425 7.425-2.121 2.12-7.425-7.424-7.425 7.425L0 16.97l7.425-7.425L0 2.121 2.121 0l7.425 7.425L16.971 0z"
-                opacity=".25"/>
-        </svg>
-      </div>
-      <img src="./images/image-rules.svg" alt="image rules" data-rules-image>
-    </div>
-  </section>
-  <section class="game active">
+  <section class="game" data-game>
     <div class="game-box">
-      <p>you picked</p>
-      <div class="game-circle">
-        <div class="circle circle-paper" data-circle="paper">
-          <button class="icon-button">
-            <img class="icon" src="./images/icon-paper.svg" alt="paper icon">
-          </button>
-        </div>
+      <h2>you picked</h2>
+      <div class="game-circle" data-your-choice>
       </div>
     </div>
+    <div class="game-result" data-result>
+      <h2 data-win-lose>you lost</h2>
+      <button data-play-again>play again</button>
+    </div>
     <div class="game-box">
-      <p>the house picked</p>
-      <div class="game-circle"></div>
+      <h2>the house picked</h2>
+      <div class="game-circle" data-computer-choice>
+      </div>
     </div>
   </section>
   <div class="buttons">
@@ -106,6 +93,19 @@
     <button data-btn="rules">rules</button>
   </div>
 </div>
+<section class="rules" data-rules>
+  <div class="box-rules">
+    <div class="top">
+      <p>rules</p>
+      <svg data-close xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+        <path fill="#3B4262" fill-rule="evenodd"
+              d="M16.97 0l2.122 2.121-7.425 7.425 7.425 7.425-2.121 2.12-7.425-7.424-7.425 7.425L0 16.97l7.425-7.425L0 2.121 2.121 0l7.425 7.425L16.971 0z"
+              opacity=".25"/>
+      </svg>
+    </div>
+    <img src="./images/image-rules.svg" alt="image rules" data-rules-image>
+  </div>
+</section>
 <script src="./scripts/index.js"></script>
 </body>
 </html>
